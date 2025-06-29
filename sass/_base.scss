@@ -364,7 +364,6 @@ article:hover {
     height: 537.77px;
     margin: 155px auto 0 auto;
   }
-
 }
 
 .companies {
@@ -391,6 +390,7 @@ article:hover {
   img:nth-child(3) {
     @include companies(277px, 208px);
     filter: opacity(0.15);
+    padding: 0;
   }
 
   img:nth-child(4) {
@@ -610,6 +610,11 @@ footer {
   }
 }
 
+.left-right {
+  display: flex;
+  gap: 230px;
+}
+
 .left-footer {
   width: 340px;
 
@@ -653,14 +658,240 @@ footer {
   }
 }
 
+.right-footer {
+  display: flex;
+  gap: 126px;
+}
+
 .footer-section {
 
-  li
-
   h2 {
-    @include text-style(500, 18px, 30px, #0b132a)
+    @include text-style(500, 18px, 30px, #0b132a);
   }
-  p {
-    @include text-style(400, 16px, 30, #4f5665)
+
+  li {
+    @include text-style(400, 16px, 30px, #4f5665);
+    list-style: none;
+  }
+}
+
+@media (max-width: 936px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px 0;
+    background-color: #ffffff;
+
+    .logo {
+      order: 1;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .sign {
+      order: 2;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+    }
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .home-1 {
+      order: -1;
+      width: 90%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .about {
+      width: 90%;
+      height: auto;
+
+      button {
+        display: block;
+        margin: 50px auto 0 auto;
+      }
+    }
+  }
+
+  .users {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 30px 0;
+
+    .location {
+      border: none;
+    }
+  }
+
+  .home-2,
+  .about-2 {
+    width: 90%;
+    margin: 50px auto 0 auto;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map img {
+    width: 100%;
+    height: auto;
+  }
+
+  .companies {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+  }
+
+  .left-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .right-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .about h1,
+  .about-2 h1,
+  .text h1,
+  .map h1,
+  .feature h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .about p,
+  .about-2 p,
+  .text p,
+  .map p,
+  .feature p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about button,
+  .feature button {
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  .select1,
+  .select2,
+  .select3 {
+    top: 0;
+  }
+
+  .feature {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+
+    button {
+      position: static;
+      margin-top: 20px;
+    }
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .rating {
+      justify-content: center;
+    }
+
+    .profile-info p,
+    .rating p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .customer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .text,
+  .map,
+  .feature,
+  .left-footer {
+    width: 90%;
+    margin: auto;
+  }
+
+  header {
+    .sign-up {
+      width: 140px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  .companies img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .home-1 img,
+  .home-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-footer {
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .footer-section {
+      width: auto;
+      text-align: center;
+    }
   }
 }
