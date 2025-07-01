@@ -327,6 +327,7 @@ article:hover {
     background-color: transparent;
     @include text-style(700, 16px, 100%, #f53838);
     text-transform: capitalize;
+    transition: 300ms;
   }
 
   button:hover {
@@ -334,6 +335,11 @@ article:hover {
     border: none;
     color: white;
     box-shadow: rgba(225, 46, 67, 0.25) 0px 1px 70px 0px, rgba(229, 55, 55, 0.3) 0px 0px 70px 0px;
+    transform: scale(1.055);
+  }
+  
+  button:active {
+    transform: scale(0.95);
   }
 }
 
@@ -614,8 +620,17 @@ footer {
     right: 70px;
     @include buttons(250px, 60px, 10px, #F53838, white);
     border: none;
+    transition: 400ms;
     @include text-style(700, 16px, 25px, white);
     box-shadow: rgba(221, 95, 95, 0.5) 0px 35px 54px, rgba(226, 31, 31, 0.12) 0px 0px 20px, rgba(185, 50, 50, 0.12) 0px 4px 6px, rgba(205, 29, 29, 0.17) 0px 12px 13px, rgba(193, 52, 52, 0.09) 0px 3px 0px;
+  }
+
+  button:hover {
+    transform: scale(1.055);
+  }
+
+  button:active {
+    transform: scale(0.95);
   }
 }
 
@@ -732,13 +747,6 @@ footer {
         display: block;
         margin: 50px auto 0 auto;
       }
-      button:hover {
-        transform: scale(1.055);
-      }
-  
-      button:active {
-        transform: scale(0.95);
-      }
     }
   }
 
@@ -847,14 +855,6 @@ footer {
     button {
       position: static;
       margin-top: 20px;
-    }
-    
-    button:hover {
-      transform: scale(1.055);
-    }
-
-    button:active {
-      transform: scale(0.95);
     }
   }
 

@@ -482,6 +482,8 @@ article:hover {
   color: #f53838;
   letter-spacing: 0%;
   text-transform: capitalize;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .select-btn button:hover {
@@ -490,6 +492,13 @@ article:hover {
   color: white;
   -webkit-box-shadow: rgba(225, 46, 67, 0.25) 0px 1px 70px 0px, rgba(229, 55, 55, 0.3) 0px 0px 70px 0px;
           box-shadow: rgba(225, 46, 67, 0.25) 0px 1px 70px 0px, rgba(229, 55, 55, 0.3) 0px 0px 70px 0px;
+  -webkit-transform: scale(1.055);
+          transform: scale(1.055);
+}
+
+.select-btn button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .select1 {
@@ -858,6 +867,8 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+  -webkit-transition: 400ms;
+  transition: 400ms;
   font-family: Rubik;
   font-weight: 700;
   font-size: 16px;
@@ -866,6 +877,16 @@ footer {
   letter-spacing: 0%;
   -webkit-box-shadow: rgba(221, 95, 95, 0.5) 0px 35px 54px, rgba(226, 31, 31, 0.12) 0px 0px 20px, rgba(185, 50, 50, 0.12) 0px 4px 6px, rgba(205, 29, 29, 0.17) 0px 12px 13px, rgba(193, 52, 52, 0.09) 0px 3px 0px;
           box-shadow: rgba(221, 95, 95, 0.5) 0px 35px 54px, rgba(226, 31, 31, 0.12) 0px 0px 20px, rgba(185, 50, 50, 0.12) 0px 4px 6px, rgba(205, 29, 29, 0.17) 0px 12px 13px, rgba(193, 52, 52, 0.09) 0px 3px 0px;
+}
+
+.feature button:hover {
+  -webkit-transform: scale(1.055);
+          transform: scale(1.055);
+}
+
+.feature button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .left-right {
@@ -1026,14 +1047,6 @@ footer {
     display: block;
     margin: 50px auto 0 auto;
   }
-  section .about button:hover {
-    -webkit-transform: scale(1.055);
-            transform: scale(1.055);
-  }
-  section .about button:active {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
   .users {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1146,14 +1159,6 @@ footer {
   .feature button {
     position: static;
     margin-top: 20px;
-  }
-  .feature button:hover {
-    -webkit-transform: scale(1.055);
-            transform: scale(1.055);
-  }
-  .feature button:active {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
   }
   .profile {
     -webkit-box-orient: vertical;
