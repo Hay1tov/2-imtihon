@@ -113,6 +113,15 @@ section {
       text-transform: capitalize;
       @include buttons(250px, 60px, 10px, #f53838, white);
       box-shadow: rgba(221, 95, 95, 0.5) 0px 35px 54px, rgba(226, 31, 31, 0.12) 0px 0px 20px, rgba(185, 50, 50, 0.12) 0px 4px 6px, rgba(205, 29, 29, 0.17) 0px 12px 13px, rgba(193, 52, 52, 0.09) 0px 3px 0px;
+      transition: 400ms;
+    }
+
+    button:hover {
+      transform: scale(1.055);
+    }
+
+    button:active {
+      transform: scale(0.95);
     }
   }
 
@@ -723,6 +732,13 @@ footer {
         display: block;
         margin: 50px auto 0 auto;
       }
+      button:hover {
+        transform: scale(1.055);
+      }
+  
+      button:active {
+        transform: scale(0.95);
+      }
     }
   }
 
@@ -831,6 +847,14 @@ footer {
     button {
       position: static;
       margin-top: 20px;
+    }
+    
+    button:hover {
+      transform: scale(1.055);
+    }
+
+    button:active {
+      transform: scale(0.95);
     }
   }
 
